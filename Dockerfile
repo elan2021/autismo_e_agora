@@ -19,6 +19,9 @@ COPY . .
 # Next.js collects completely anonymous telemetry data about general usage.
 ENV NEXT_TELEMETRY_DISABLED=1
 
+# Provide a dummy DATABASE_URL during build time for Prisma validation
+ENV DATABASE_URL="file:./dev.db"
+
 # If using Prisma, generate client
 RUN npx prisma generate
 
@@ -52,5 +55,9 @@ EXPOSE 3000
 
 ENV PORT=3000
 ENV HOSTNAME="0.0.0.0"
+
+# Runtime DATABASE_URL should be provided by Easypanel
+# Default to SQLite for safety
+ENV DATABASE_URL="file:./data/dev.db"
 
 CMD ["node", "server.js"]
