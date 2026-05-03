@@ -1,4 +1,4 @@
-export const FB_PIXEL_ID = process.env.NEXT_PUBLIC_FB_PIXEL_ID;
+export const FB_PIXEL_ID = process.env.NEXT_PUBLIC_FB_PIXEL_ID || "1609800899813486";
 
 export const pageview = () => {
   if (typeof window !== "undefined" && (window as any).fbq) {
