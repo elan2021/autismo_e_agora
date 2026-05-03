@@ -41,7 +41,7 @@ export const Pricing = () => {
 
           <Button
             className="w-full text-xl py-6 animate-glow-pulse"
-            href={process.env.NEXT_PUBLIC_HOTMART_URL || "https://pay.hotmart.com/PLACEHOLDER"}
+            href={process.env.NEXT_PUBLIC_CHECKOUT_URL || "https://pay.kiwify.com.br/1RqjCAD"}
             fbEvent="InitiateCheckout"
           >
             ACESSO IMEDIATO AO GUIA

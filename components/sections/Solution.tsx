@@ -52,7 +52,12 @@ export const Solution = () => {
               </li>
             ))}
           </ul>
-          <Button>Começar Minha Jornada Agora</Button>
+          <Button
+            href={process.env.NEXT_PUBLIC_CHECKOUT_URL || "https://pay.kiwify.com.br/1RqjCAD"}
+            fbEvent="InitiateCheckout"
+          >
+            Começar Minha Jornada Agora
+          </Button>
         </motion.div>
       </div>
     </Section>

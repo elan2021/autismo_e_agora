@@ -33,7 +33,7 @@ export const StickyCTA = () => {
           className="fixed bottom-4 left-4 right-4 z-50 md:hidden"
         >
           <a
-            href={process.env.NEXT_PUBLIC_HOTMART_URL || "https://pay.hotmart.com/PLACEHOLDER"}
+            href={process.env.NEXT_PUBLIC_CHECKOUT_URL || "https://pay.kiwify.com.br/1RqjCAD"}
             onClick={handleCTAClick}
             className="flex items-center justify-center w-full py-4 px-6 bg-brand-orange text-white font-nunito font-bold rounded-xl shadow-lg shadow-brand-orange/30 active:scale-95 transition-transform"
           >

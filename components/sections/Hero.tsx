@@ -33,7 +33,11 @@ export const Hero = () => {
             perder na confusão do Google.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button className="group">
+            <Button 
+              className="group"
+              href={process.env.NEXT_PUBLIC_CHECKOUT_URL || "https://pay.kiwify.com.br/1RqjCAD"}
+              fbEvent="InitiateCheckout"
+            >
               Quero o Guia Acolhedor Agora
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
